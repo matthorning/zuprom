@@ -64,10 +64,10 @@ html {
 
 .white-popup {
   position: relative;
-  background: #FFF;
+  background: #0C808B;
   padding: 20px;
   width: auto;
   max-width: 500px;
   margin: 20px auto;
-  height: 500px;
+  height: 400px;
 }
