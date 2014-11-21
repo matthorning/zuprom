@@ -3,32 +3,73 @@
 		<title>zuProm - Vote for your king and queen!</title>
 		<link href="normalize.css" rel="stylesheet" />
 		<link href="styles.css" rel="stylesheet" />
-		<link rel="stylesheet" href="magnific-popup.css"> 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
-		<script src="jquery.magnific-popup.min.js"></script> 
+		<link rel="stylesheet" href="magnific-popup.css">
+		<link rel="stylesheet" href="wheel.css"> 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+		<script src="jquery.magnific-popup.min.js"></script>
 	</head>
 	<body>
 		<section id="header">
 			<h1><b>zu</b>Prom</h1>
-			<p>vote for your king and queen.</p>
+			<p>Vote for your king and queen.</p>
 		</section>
 		<section id="main">
 			<div class="vote">
 				<div class="title">Your Queen</div>
-				<button data-mfp-src="#choose-popup" class="open-popup-link">Choose</button>
+				<button data-mfp-src="#female-popup" class="open-popup-link">Choose</button>
 				<button disabled>Vote</button>
 			</div>
 			<div class="vote">
 				<div class="title">Your King</div>
-				<button data-mfp-src="#choose-popup" class="open-popup-link">Choose</button>
+				<button data-mfp-src="#male-popup" class="open-popup-link">Choose</button>
 				<button disabled>Vote</button>
 			</div>
 		</section>
 		<section id="footer">
 		</section>
-		<div id="choose-popup" class="white-popup mfp-hide">
-		  Popup content
+		<div id="male-popup" class="white-popup mfp-hide">
+			<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
+			<div class="wheels">
+			  <div class="wheel male">
+			    <div>Matt</div>
+			    <div>Kevin</div>
+			    <div>Cory</div>
+			    <div>Brady</div>
+			    <div>Michael</div>
+			    <div>Kirk</div>
+			    <div>Dan</div>
+			    <div>Shane</div>
+			    <div>Albert</div>
+			    <div>Devon</div>
+			    <div>Laurence</div>
+			    <div>Dan S.</div>
+			    <div>Tony</div>
+			    <div>Ryan P.</div>
+			    <div>Zach</div>
+			    <div>Graham</div>
+			    <div>Ryan L.</div>
+			  </div>
+			</div>
+		</div>
+		<div id="female-popup" class="white-popup mfp-hide">
+			<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
+			<div class="wheels">
+			  <div class="wheel female">
+			    <div>Toby</div>
+			    <div>Deidre</div>
+			    <div>Jen</div>
+			    <div>Valerie</div>
+			    <div>Mellary</div>
+			    <div>Bonnie</div>
+			    <div>Amy</div>
+			    <div>Chelsey</div>
+			    <div>Melissa</div>
+			    <div>Amanda</div>
+			    <div>Martina</div>
+			  </div>
+			</div>
 		</div>
 		<script src="main.js"></script> 
+		<script src="wheel.js"></script>
 	</body>
 </html>
