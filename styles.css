@@ -37,6 +37,7 @@ html {
 }
 #main {
   padding: 0vw;
+  margin-bottom: 5vw;
 }
 #main button {
   background-color: #63B3BD;
@@ -61,7 +62,16 @@ html {
 #main .vote {
   text-align: center;
 }
-
+#footer {
+	background-color: black;
+	position: relative;
+	text-align: center;
+	margin-top: 30px;
+}
+#footer img {
+	padding: 20px;
+	position: relative;
+}
 .white-popup {
   position: relative;
   background: #0C808B;
