@@ -23,7 +23,7 @@ function voteSuccess(object) {
 
 }
 
-$('.wheel').on('click', '> div', function(e) {
+$('.wheel').on('mousedown touchstart', '> div', function(e) {
   var name = $(e.currentTarget).text();
   alert(name);
   var kingOrQueen = $(e.delegateTarget).attr('id');
