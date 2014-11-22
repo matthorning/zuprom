@@ -27,6 +27,11 @@ $('button.vote').on('click', function(e) {
   voteByName(name);
   $(this).text('voted');
   $(this).prop('disabled', true);
+  if ($(this).attr('id') == 'vote-queen') {
+    $('#queen').trigger('disable');
+  } else {
+    $('#king').trigger('disable');
+  }
 });
 
 //var Votes = Parse.Object.extend("Votes");
