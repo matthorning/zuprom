@@ -12,7 +12,7 @@
 }
 
 html {
-  background-color: #0C808B;
+  background-color: black;
   font-family: 'museo_slab100';
 }
 #header {
@@ -36,8 +36,9 @@ html {
   margin: 0;
 }
 #main {
-  padding: 0vw;
+  padding: 1px;
   margin-bottom: 5vw;
+  background-color: #0C808B;
 }
 #main button {
   background-color: #63B3BD;
@@ -81,3 +82,66 @@ html {
   margin: 20px auto;
   height: 400px;
 }
+div.fancy-select {
+  display: inline-block;
+  width: 47vw;
+}
+div.fancy-select ul.options {
+padding: 3vw;
+background: white;
+max-height: 400px;
+width: 188%;
+left: -50%;
+}
+div.fancy-select ul.options li {
+  float: left;
+  padding: 3vw;
+  font-size: 5vw;
+  color: black;
+}
+div.fancy-select ul.options li.selected {
+  background: #E24032;
+}
+div.fancy-select ul.options li.hover {
+  color: black;
+}
+div.fancy-select div.trigger {
+  text-align: center;
+  background-color: #63B3BD;
+  color: white;
+  border: none;
+  font-size: 7vw;
+  padding: 3vw 3vw;
+  -moz-box-shadow:    2px 2px 5px 0px #000;
+  -webkit-box-shadow: 2px 2px 5px 0px #000;
+  box-shadow:         2px 2px 5px 0px #000;
+  text-transform:uppercase;
+}
+div.fancy-select select:focus + div.trigger {
+  -moz-box-shadow:    2px 2px 5px 0px #000;
+  -webkit-box-shadow: 2px 2px 5px 0px #000;
+  box-shadow:         2px 2px 5px 0px #000;
+}
+div.fancy-select div.trigger.open {
+  border: none;
+}
+div.fancy-select div.trigger {
+  border-radius: 0;
+  width: auto;
+  margin-bottom: 5vw;
+}
+div.fancy-select div.trigger:after {
+  display: none;
+}
+
+div.cs-skin-rotate {
+}
+.cs-wrapper {
+  text-align: center;
+
+}
+.cs-skin-rotate .cs-options ul li {
+  background: white;
+  text-align: center;
+}
+

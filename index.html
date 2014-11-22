@@ -2,11 +2,9 @@
 	<head>
 		<title>zuProm - Vote for your king and queen!</title>
 		<link href="normalize.css" rel="stylesheet" />
+		<link href="fancySelect.css" rel="stylesheet" />
 		<link href="styles.css" rel="stylesheet" />
-		<link rel="stylesheet" href="magnific-popup.css"> 
-		<link rel="stylesheet" href="wheel.css"> 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
-		<script src="jquery.magnific-popup.min.js"></script> 
 		<script src="http://www.parsecdn.com/js/parse-1.3.1.min.js"></script>
 	</head>
 	<body>
@@ -17,67 +15,52 @@
 		<section id="main">
 			<div class="vote">
 				<div class="title">Your Queen</div>
-				<button id="choose-queen" data-mfp-src="#female-popup" class="open-popup-link">Choose</button><br>
+				<select id="queen" class="basic">
+					<option value="">Choose</option>
+					<option value="Toby">Toby</option>
+					<option value="Deidre">Deidre</option>
+					<option value="Jen">Jen</option>
+					<option value="Valerie">Valerie</option>
+					<option value="Mellary">Mellary</option>
+					<option value="Bonnie">Bonnie</option>
+					<option value="Amy">Amy</option>
+					<option value="Chelsey">Chelsey</option>
+					<option value="Melissa">Melissa</option>
+					<option value="Amanda">Amanda</option>
+					<option value="Martina">Martina</option>
+				</select><br>
 				<button id="vote-queen" class="vote" disabled>Vote</button>
 			</div>
 			<div class="vote">
 				<div class="title">Your King</div>
-				<button id="choose-king" data-mfp-src="#male-popup" class="open-popup-link">Choose</button><br>
+				<select id="king" class="basic">
+					<option value="">Choose</option>
+					<option value="Matt">Matt</option>
+					<option value="Kevin">Kevin</option>
+					<option value="Cory">Cory</option>
+					<option value="Brady">Brady</option>
+					<option value="Michael">Michael</option>
+					<option value="Kirk">Kirk</option>
+					<option value="Dan">Dan</option>
+					<option value="Shane">Shane</option>
+					<option value="Albert">Albert</option>
+					<option value="Devon">Devon</option>
+					<option value="Laurence">Laurence</option>
+					<option value="Dan S.">Dan S.</option>
+					<option value="Tony">Tony</option>
+					<option value="Ryan P.">Ryan P.</option>
+					<option value="Zach">Zach</option>
+					<option value="Graham">Graham</option>
+					<option value="Ryan L.">Ryan L.</option>
+				</select><br>
 				<button id="vote-king" class="vote" disabled>Vote</button>
 			</div>
 		</section>
 		<section id="footer">
 			<img src="footer-logo.png" />
 		</section>
-		<div id="male-popup" class="white-popup mfp-hide">
-			<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
-			<div class="wheels">
-			  <div class="wheel male" id="king">
-			    <div>Matt</div>
-			    <div>Kevin</div>
-			    <div>Cory</div>
-			    <div>Brady</div>
-			    <div>Michael</div>
-			    <div>Kirk</div>
-			    <div>Dan</div>
-			    <div>Shane</div>
-			    <div>Albert</div>
-			    <div>Devon</div>
-			    <div>Laurence</div>
-			    <div>Dan S.</div>
-			    <div>Tony</div>
-			    <div>Ryan P.</div>
-			    <div>Zach</div>
-			    <div>Graham</div>
-			    <div>Ryan L.</div>
-			  </div>
-			</div>
-		</div>
-		<div id="female-popup" class="white-popup mfp-hide">
-			<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
-			<div class="wheels">
-			  <div class="wheel female" id="queen">
-			    <div>Toby</div>
-			    <div>Deidre</div>
-			    <div>Jen</div>
-			    <div>Valerie</div>
-			    <div>Mellary</div>
-			    <div>Bonnie</div>
-			    <div>Amy</div>
-			    <div>Chelsey</div>
-			    <div>Melissa</div>
-			    <div>Amanda</div>
-			    <div>Martina</div>
-			    <div>--</div>
-			    <div>--</div>
-			    <div>--</div>
-			    <div>--</div>
-			    <div>--</div>
-			    <div>--</div>
-			  </div>
-			</div>
-		</div>
+		<script src="fancySelect.js"></script> 
+		<script src="store.min.js"></script> 
 		<script src="main.js"></script> 
-		<script src="wheel.js"></script>
 	</body>
 </html>
